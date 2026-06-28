@@ -30,8 +30,8 @@ That's it. The household calculator, policy reforms, and population-level impact
 Part of the session uses a short **Google Colab** notebook, which runs Python entirely in your browser — nothing is installed on your machine.
 
 1. Make sure you can sign in to a **Google account** (Colab requires one).
-2. Open the tutorial notebook (link will be shared at the session and on this page):
-   **[tutorial.policyengine.org](https://tutorial.policyengine.org)**
+2. Open the tutorial notebook — from the tutorial hub at **[tutorial.policyengine.org](https://tutorial.policyengine.org)**, or directly:
+   https://colab.research.google.com/github/PolicyEngine/tutorial/blob/main/notebooks/policyengine_tutorial_ima2026.ipynb
 3. *(Optional, to save time)* Open it before the session and run the first cell — it installs the `policyengine` package (~2–3 minutes the first time).
 
 If you prefer not to use Colab, you can simply watch this portion; the same results are reproduced in the web app.
