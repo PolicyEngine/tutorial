@@ -30,7 +30,7 @@ That's it. The household calculator, policy reforms, and population-level impact
 Part of the session uses a short **Google Colab** notebook, which runs Python entirely in your browser — nothing is installed on your machine.
 
 1. Make sure you can sign in to a **Google account** (Colab requires one).
-2. Open the tutorial notebook — from the tutorial hub at **[tutorial.policyengine.org](https://tutorial.policyengine.org)**, or directly:
+2. Open the tutorial notebook — from the tutorial hub at **[policyengine.org/tutorial](https://policyengine.org/tutorial)**, or directly:
    https://colab.research.google.com/github/PolicyEngine/tutorial/blob/main/notebooks/policyengine_tutorial_ima2026.ipynb
 3. *(Optional, to save time)* Open it before the session and run the first cell — it installs the `policyengine` package (~2–3 minutes the first time).
 
@@ -65,7 +65,7 @@ Population-level microsimulation on the full national dataset is memory-intensiv
 
 PolicyEngine ships a **Claude Code plugin** that drives all of the above from plain-language prompts (e.g. *"What's the poverty effect of raising the Child Tax Credit to $3,000?"*). In the session this is a **demonstration** — you do not need to install anything to follow it.
 
-If you'd like to try it yourself afterwards, you'll need [Claude Code](https://claude.com/claude-code) and an Anthropic account; setup instructions will be linked from [tutorial.policyengine.org](https://tutorial.policyengine.org).
+If you'd like to try it yourself afterwards, you'll need [Claude Code](https://claude.com/claude-code) and an Anthropic account; setup instructions will be linked from [policyengine.org/tutorial](https://policyengine.org/tutorial).
 
 ---
 
