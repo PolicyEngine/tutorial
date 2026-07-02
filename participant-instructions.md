@@ -43,10 +43,10 @@ If you prefer not to use Colab, you can simply watch this portion; the same resu
 If you'd rather run on your own machine, you need **Python 3.10 or newer**, then:
 
 ```bash
-pip install policyengine
+pip install "policyengine[us]"
 ```
 
-This installs the unified PolicyEngine package (both US and UK tax-benefit models). Quick check:
+This installs the PolicyEngine package with the US model (use `"policyengine[models]"` for US + UK). Quick check:
 
 ```python
 import policyengine as pe
@@ -57,7 +57,7 @@ result = pe.us.calculate_household(
 print(result.household.household_net_income)
 ```
 
-Population-level microsimulation on the full national dataset is memory-intensive (it runs over ~100,000+ representative households). For the live session we use the web app or a small calibrated sample for that part; full-scale runs are better done after the workshop.
+Population-level microsimulation on the full national dataset is memory-intensive (it runs over ~100,000+ representative households). For the live session we use the web app for that part; full-scale Python runs need ~32+ GB of RAM and are better done after the workshop.
 
 ---
 
