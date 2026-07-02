@@ -100,6 +100,7 @@
     <nav>
       <a href="https://policyengine.org">Web app</a>
       <a href="https://github.com/PolicyEngine/policyengine.py">Python</a>
+      <a href="#data">Data</a>
       <a href="#setup">Setup</a>
     </nav>
   </header>
@@ -124,6 +125,8 @@
       </div>
     </div>
 
+    <div class="note"><strong>Coming to the live session?</strong> Open the Colab notebook, <strong>save a copy to your Drive</strong>, and run the Setup cell beforehand — the install takes ~2–3 minutes, so doing it ahead means nobody waits on it together on the conference Wi-Fi.</div>
+
     <section class="body" id="about">
       <h3>What you'll do</h3>
       <p>This session uses live US and UK examples to walk through the full PolicyEngine workflow:</p>
@@ -133,6 +136,18 @@
         <div class="step"><div class="lead">3 · Population</div><h4>Run a national microsimulation</h4><p>Budgetary cost, distribution by decile, poverty, and winners and losers.</p></div>
         <div class="step"><div class="lead">4 · AI assistant</div><h4>Ask in plain language</h4><p>Drive the whole analysis from a prompt with the Claude Code plugin.</p></div>
       </div>
+    </section>
+
+    <section class="body" id="data">
+      <h3>How the data works</h3>
+      <p>Population results run on <strong>Populace</strong>, PolicyEngine's open US microdata. It isn't a single survey — it's assembled from primary sources and calibrated to administrative totals, which is what lets a national reform estimate match official aggregates while staying reweightable to any region.</p>
+      <div class="grid">
+        <div class="step"><div class="lead">1 · Sources</div><h4>Primary data, combined</h4><p>Household surveys (CPS, ACS), tax records (IRS), and wealth data (SCF) — each contributing the variables it measures best.</p></div>
+        <div class="step"><div class="lead">2 · Imputation</div><h4>Fused, not averaged</h4><p>Variables no single survey observes together are joined with zero-inflated quantile regression forests — sampling the full conditional distribution, so spread and the mass at zero survive.</p></div>
+        <div class="step"><div class="lead">3 · Calibration</div><h4>30,000+ targets at once</h4><p>Gradient-descent reweighting fits tens of thousands of administrative totals simultaneously, with L0 regularisation for a sparse, parsimonious set of households.</p></div>
+        <div class="step"><div class="lead">4 · Geography</div><h4>Reweighted, not rebuilt</h4><p>The same engine reweights the ~340M-person national file to states and congressional districts — one dataset, filtered, not separate per-area files.</p></div>
+      </div>
+      <div class="note">All of it is open source — <a href="https://github.com/PolicyEngine/populace">Populace</a> and the <a href="https://github.com/PolicyEngine/policyengine.py">policyengine</a> package — and the same calibrated microdata powers the web app, the Python API, and this notebook.</div>
     </section>
 
     <section class="body" id="setup">
@@ -148,7 +163,7 @@
         <div class="step">
           <div class="lead">Optional · for the notebook</div>
           <h4>A Google account</h4>
-          <p>To follow the Python notebook in <a href="https://colab.research.google.com/github/PolicyEngine/tutorial/blob/main/notebooks/policyengine_tutorial_ima2026.ipynb">Google Colab</a> — runs in your browser, nothing installed. Open it ahead and run the first cell to save time.</p>
+          <p>To follow the Python notebook in <a href="https://colab.research.google.com/github/PolicyEngine/tutorial/blob/main/notebooks/policyengine_tutorial_ima2026.ipynb">Google Colab</a> — runs in your browser, nothing installed. <strong>Before the session:</strong> open it, <strong>File → Save a copy in Drive</strong>, then run the Setup cell (installs in ~2–3 min).</p>
         </div>
         <div class="step">
           <div class="lead">Optional · run locally</div>
