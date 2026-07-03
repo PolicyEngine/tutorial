@@ -148,10 +148,10 @@
       <div class="grid">
         <div class="step"><div class="lead">1 · Sources</div><h4>Primary data, combined</h4><p>Household surveys (CPS, ACS), tax records (IRS), and wealth data (SCF) — each contributing the variables it measures best.</p></div>
         <div class="step"><div class="lead">2 · Imputation</div><h4>Fused, not averaged</h4><p>Variables no single survey observes together are joined with zero-inflated quantile regression forests — sampling the full conditional distribution, so spread and the mass at zero survive.</p></div>
-        <div class="step"><div class="lead">3 · Calibration</div><h4>30,000+ targets at once</h4><p>Gradient-descent reweighting fits tens of thousands of administrative totals simultaneously, with L0 regularisation for a sparse, parsimonious set of households.</p></div>
+        <div class="step"><div class="lead">3 · Calibration</div><h4><a href="https://calibration-diagnostics.vercel.app/populace">30,000+ targets at once</a></h4><p>Gradient-descent reweighting fits tens of thousands of administrative totals simultaneously, with <a href="https://populace.dev/papers/l0">L0 regularisation</a> for a sparse, parsimonious set of households — inspect every target fit in the live dashboard.</p></div>
         <div class="step"><div class="lead">4 · Geography</div><h4>Reweighted, not rebuilt</h4><p>The same engine reweights the ~340M-person national file to states and congressional districts — one dataset, filtered, not separate per-area files.</p></div>
       </div>
-      <div class="note">All of it is open source — <a href="https://github.com/PolicyEngine/populace">Populace</a> and the <a href="https://github.com/PolicyEngine/policyengine.py">policyengine</a> package — and the same calibrated microdata powers the web app, the Python API, and this notebook.</div>
+      <div class="note">Full methodology, papers, releases, and validation evidence live at <a href="https://populace.dev">populace.dev</a>. All of it is open source — <a href="https://github.com/PolicyEngine/populace">Populace</a> and the <a href="https://github.com/PolicyEngine/policyengine.py">policyengine</a> package — and the same calibrated microdata powers the web app, the Python API, and this notebook.</div>
     </section>
 
     <section class="body" id="setup">
