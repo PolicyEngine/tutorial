@@ -11,7 +11,7 @@ Served at **[policyengine.org/tutorial](https://policyengine.org/tutorial)** (pr
 | `tutorial/index.html` | Landing page (lists tutorials; currently features IMA World Congress 2026). Served at `/tutorial`. |
 | `notebooks/policyengine_tutorial_ima2026.ipynb` | Colab notebook for the IMA 2026 tutorial — household calculator, reforms, charts, and population analysis with the `policyengine` package. |
 | `participant-instructions.md` | Setup instructions shared with conference organisers (markdown for the conference site). |
-| `SPEC-microcosm-small-file.md` | Spec for a calibrated small Microcosm dataset (`populace_us_20k`) for fast in-Colab population analysis. |
+| `SPEC-populace-small-file.md` | Spec for a calibrated small Microcosm dataset (`populace_us_20k`) for fast in-Colab population analysis. |
 
 ## Open the notebook in Colab
 
